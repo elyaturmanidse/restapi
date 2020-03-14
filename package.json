@@ -1,0 +1,28 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "restapi app ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "restapi test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/elyaturmanidse/restapi.git"
+  },
+  "keywords": [
+    "restapi",
+    "app",
+    "practice"
+  ],
+  "author": "Elya Turmanidze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elyaturmanidse/restapi/issues"
+  },
+  "homepage": "https://github.com/elyaturmanidse/restapi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
