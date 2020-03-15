@@ -1,15 +1,20 @@
 let express = require("express")
 let app = express()
 let personRoute = require('./routes/person')
+let customerRoute = require('./routes/customer')
 let path = require('path')
+let bodyParser = require('body-parser')
+
+app.use(bodyParser.json())
 
 //Middleware function aka pipeline 
 app.use((req, res, next) => {
-    console.log(`${new Date().toString()} => ${req.originalUrl}`)
+    console.log(`${new Date().toString()} => ${req.originalUrl}`, req.Body)
     next()
 })
 
 app.use(personRoute)
+app.use(customerRoute)
 app.use(express.static('public'))
 
 //404 handler 
