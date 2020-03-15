@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
     "test": "restapi test"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "homepage": "https://github.com/elyaturmanidse/restapi#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
